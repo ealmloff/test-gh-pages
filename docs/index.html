@@ -5,18 +5,18 @@
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta charset="UTF-8" />
-  <link rel="preload" as="script" href="/./assets/test-gh-pages-909d0a33cc319dca.js" crossorigin><link rel="preload" as="fetch" type="application/wasm" href="/./assets/test-gh-pages_bg-b63110d8493c5d12.wasm" crossorigin></head>
+  <link rel="preload" as="script" href="/test-gh-pages/assets/test-gh-pages-909d0a33cc319dca.js" crossorigin><link rel="preload" as="fetch" type="application/wasm" href="/test-gh-pages/assets/test-gh-pages_bg-6735bd62284cf159.wasm" crossorigin></head>
   <body>
     <div id="main"></div>
    <script>
   // We can't use a module script here because we need to start the script immediately when streaming
-  import("/./assets/test-gh-pages-909d0a33cc319dca.js").then(
+  import("/test-gh-pages/assets/test-gh-pages-909d0a33cc319dca.js").then(
     ({ default: init, initSync }) => {
       // export initSync in case a split module needs to initialize
       window.__wasm_split_main_initSync = initSync;
 
       // Actually perform the load
-      init("/./assets/test-gh-pages_bg-b63110d8493c5d12.wasm").then((wasm) => {
+      init("/test-gh-pages/assets/test-gh-pages_bg-6735bd62284cf159.wasm").then((wasm) => {
         if (wasm.__wbindgen_start == undefined) {
             wasm.main();
         }
