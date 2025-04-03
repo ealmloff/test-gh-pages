@@ -4,6 +4,7 @@
 
 # HTML title tag content
 title = "test-gh-pages"
+base_path = "test-gh-pages"
 
 # include `assets` in web platform
 [web.resource]
